@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  // setTimeout(()=>{
+  //   console.log("hello world");
+  // },1000)
+  // const s = 3
+  // console.log(s);
+
+  //参数->函数(resolve,reject)
+  // new Promise((resolve,reject)=>{
+  //   setTimeout(()=>{
+  //     // resolve("hello vuejs");
+  //       // console.log("hello world");
+  //     reject('err')
+  //   },1000)
+  // }).then(data =>{
+  //   console.log(data);
+  // }).catch(err => {
+  //   console.log(err);
+  // })
+
+  new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve('hello boy')
+    })
+  }).then(data => {
+    console.log(data);
+  },err => {
+    console.log(err);
+  })
+</script>
+</body>
+</html>
